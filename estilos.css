@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #dolar {
@@ -15,8 +16,8 @@
   background-color: aquamarine;
 }
 h2 {
-  height: 10%;
   background-color: rgb(182, 201, 201);
+  padding: 10px 0;
 }
 
 .dolar {
@@ -27,23 +28,36 @@ h2 {
 }
 .cotizacion {
   text-align: center;
+  align-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  height: 60%;
+  height: 40%;
+  font-size: 25px;
   background-color: blue;
 }
 .variacion {
   text-align: center;
   width: 100%;
-  height: 13%;
+  height: 18%;
   background-color: rgb(204, 233, 40);
 }
+
+.variacion p {
+  padding-top: 7px;
+  font-size: 20px;
+}
+
 .fecha {
   text-align: center;
   width: 100%;
-  height: 13%;
+  height: 18%;
   background-color: rgb(196, 50, 50);
+}
+
+.fecha p {
+  padding-top: 7px;
+  font-size: 18px;
 }
 
 #dolarOficial {
