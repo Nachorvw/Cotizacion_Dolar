@@ -13,17 +13,22 @@
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: aquamarine;
 }
 h2 {
-  background-color: rgb(182, 201, 201);
+  background-color: #728176;
   padding: 10px 0;
+  margin-left: 10px;
 }
 
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .dolar {
   text-align: center;
   border-radius: 5px;
-  background-color: rgb(25, 56, 56);
+  background-color: #728176;
   overflow: hidden;
 }
 .cotizacion {
@@ -34,13 +39,13 @@ h2 {
   width: 100%;
   height: 40%;
   font-size: 25px;
-  background-color: blue;
+  background-color: #ffffff;
 }
 .variacion {
   text-align: center;
   width: 100%;
   height: 18%;
-  background-color: rgb(204, 233, 40);
+  background-color: #dadada;
 }
 
 .variacion p {
@@ -52,7 +57,7 @@ h2 {
   text-align: center;
   width: 100%;
   height: 18%;
-  background-color: rgb(196, 50, 50);
+  background-color: #728176;
 }
 
 .fecha p {
@@ -92,10 +97,10 @@ h2 {
 
 #compra {
   grid-template-columns: 1/2;
-  background-color: blueviolet;
+  background-color: #ffffff;
 }
 
 #venta {
   grid-template-columns: 2/3;
-  background-color: rgb(202, 182, 182);
+  background-color: #ffffff;
 }

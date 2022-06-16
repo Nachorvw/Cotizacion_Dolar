@@ -9,8 +9,8 @@ function traer() {
     .then((res) => res.json())
     .then((date) => {
       console.log(date[0].casa.compra);
-      DOcompra.innerHTML = `<p> ${date[0].casa.compra}</p>`;
-      DOventa.innerHTML = `<p> ${date[0].casa.venta}</p>`;
+      DOcompra.innerHTML = `<p> Compra<br>${date[0].casa.compra}</p>`;
+      DOventa.innerHTML = `<p> Venta<br>${date[0].casa.venta}</p>`;
       DOvariacion.innerHTML = `<p>Variacion : ${date[0].casa.variacion}</p>`;
       fecha.innerHTML = `<p>${hoy.toDateString()}</p>`;
     });
