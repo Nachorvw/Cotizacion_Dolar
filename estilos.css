@@ -18,8 +18,14 @@
 h2 {
   background-color: rgb(182, 201, 201);
   padding: 10px 0;
+  margin-left: 10px;
 }
 
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .dolar {
   text-align: center;
   border-radius: 5px;
