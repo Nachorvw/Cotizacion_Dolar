@@ -24,16 +24,46 @@ async function Dolar_Blue() {
   document.getElementById("Venta_Blue").textContent = Data[1].casa.venta;
   document.getElementById("Variacion_Blue").textContent =
     Data[1].casa.variacion;
-  document.getElementById("Fecha").textContent = hoy;
+  document.getElementById("Fecha_B").textContent = hoy;
 }
 Dolar_Blue();
+async function Dolar_Liqui() {
+  const Respuesta = await fetch(api_url);
+  const Data = await Respuesta.json();
+  document.getElementById("Compra_Liqui").textContent = Data[3].casa.compra;
+  document.getElementById("Venta_Liqui").textContent = Data[3].casa.venta;
+  document.getElementById("Variacion_Liqui").textContent =
+    Data[3].casa.variacion;
+  document.getElementById("Fecha_L").innerText = hoy;
+}
+Dolar_Liqui();
+async function Dolar_Promedio() {
+  const Respuesta = await fetch(api_url);
+  const Data = await Respuesta.json();
+  document.getElementById("Compra_Promedio").textContent = Data[7].casa.compra;
+  document.getElementById("Venta_Promedio").textContent = Data[7].casa.venta;
+  document.getElementById("Variacion_Promedio").textContent =
+    Data[7].casa.variacion;
+  document.getElementById("Fecha_P").innerText = hoy;
+}
+Dolar_Promedio();
+async function Dolar_Bolsa() {
+  const Respuesta = await fetch(api_url);
+  const Data = await Respuesta.json();
+  document.getElementById("Compra_Bolsa").textContent = Data[4].casa.compra;
+  document.getElementById("Venta_Bolsa").textContent = Data[4].casa.venta;
+  document.getElementById("Variacion_Bolsa").textContent =
+    Data[4].casa.variacion;
+  document.getElementById("Fecha_Bolsa").innerText = hoy;
+}
+Dolar_Bolsa();
 async function Mostrar_Consola() {
   const Respuesta = await fetch(api_url);
   const Data = await Respuesta.json();
 
-  console.log(Data[1]);
-  console.log(Data[1].casa.compra);
-  console.log(Data[1].casa.venta);
-  console.log(Data[1].casa.variacion);
+  console.log(Data[7]);
+  console.log(Data[7].casa.compra);
+  console.log(Data[7].casa.venta);
+  console.log(Data[7].casa.variacion);
 }
 Mostrar_Consola();
