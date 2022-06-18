@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="estilos.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header class="header">
-    <h1>Dolar Hoy en Argentina</h1>
-  </header>
-  <div class="container">
-    <div id="dolar">
-      <div id="dolarOficial" class="dolar">
-        <div class="titulo">
-          <span><img src="img/b1.png" alt="" /></span>
-          <h2>Dolar Oficial</h2>
-        </div>
-        <div class="cotizacion">
-          <div id="compra">
-            <p></p>
+   <body>
+    <div class="container">
+      <h1>Dolar Hoy en Argentina</h1>
+      <div id="dolar">
+        <div id="dolarOficial" class="dolar">
+          <div class="titulo">
+            <span><img src="img/b1.png" alt="" /></span>
+            <h2>Dolar Oficial</h2>
           </div>
-          <div id="venta">
-            <p></p>
+          <div class="cotizacion">
+            <div id="compra"><p></p></div>
+            <div id="venta"><p></p></div>
           </div>
+          <div class="variacion" id="varia"><p></p></div>
+          <div class="fecha" id="fecha"><p></p></div>
         </div>
-        <div class="variacion" id="varia">
-          <p></p>
+        <div id="dolarBlue" class="dolar">
+          <div class="titulo">
+            <span><img src="img/b2.png" /></span>
+            <h2>Dolar Blue</h2>
+          </div>
+          <div class="cotizacion">
+            <div id="compra">
+              <p>Compra <br /><span id="Compra_Blue"></span></p>
+            </div>
+            <div id="venta">
+              <p>Venta <br /><span id="Venta_Blue"></span></p>
+            </div>
+          </div>
+          <div class="variacion">
+            <p>Variacion: <span id="Variacion_Blue"></span></p>
+          </div>
+          <div class="fecha"><span id="Fecha_B"></span></div>
         </div>
-        <div class="fecha" id="fecha">
-          <p></p>
+        <div id="dolarConLiquid" class="dolar">
+          <div class="titulo">
+            <span><img src="img/b3.png" /></span>
+            <h2>Contado Con Liqui</h2>
+          </div>
+          <div class="cotizacion">
+            <div id="compra">
+              <p>Compra <br /><span id="Compra_Liqui"></span></p>
+            </div>
+            <div id="venta">
+              <p>Venta <br /><span id="Venta_Liqui"></span></p>
+            </div>
+          </div>
+          <div class="variacion">
+            <p>Variacion: <span id="Variacion_Liqui"></span></p>
+          </div>
+          <div class="fecha"><span id="Fecha_L"></span></div>
         </div>
+        <div id="dolarPromedio" class="dolar">
+          <div class="titulo">
+            <span><img src="img/dolar_promedio.png" /></span>
+            <h2>Dolar Promedio</h2>
+          </div>
+          <div class="cotizacion">
+            <div id="compra">
+              <p>Compra <br /><span id="Compra_Promedio"></span></p>
+            </div>
+            <div id="venta">
+              <p>Venta <br /><span id="Venta_Promedio"></span></p>
+            </div>
+          </div>
+          <div class="variacion">
+            <p>Variacion: <span id="Variacion_Promedio"></span></p>
+          </div>
+          <div class="fecha"><span id="Fecha_P"></span></div>
+        </div>
+        <div id="dolarBolsa" class="dolar"><div class="titulo">
+            <span><img src="img/b5.png" /></span>
+            <h2>Dolar Bolsa</h2>
+          </div>
+          <div class="cotizacion">
+            <div id="compra">
+              <p>Compra <br /><span id="Compra_Bolsa"></span></p>
+            </div>
+            <div id="venta">
+              <p>Venta <br /><span id="Venta_Bolsa"></span></p>
+            </div>
+          </div>
+          <div class="variacion">
+            <p>Variacion: <span id="Variacion_Bolsa"></span></p>
+          </div>
+          <div class="fecha"><span id="Fecha_Bolsa"></span></div>
+        </div></div>
+        <div id="dolarTurista" class="dolar"></div>
       </div>
-      <div id="dolarBlue" class="dolar"></div>
-      <div id="dolarConLiquid" class="dolar"></div>
-      <div id="dolarPromedio" class="dolar"></div>
-      <div id="dolarBolsa" class="dolar"></div>
-      <div id="dolarTurista" class="dolar"></div>
     </div>
-  </div>
-
-  <script src="dolarAPI.js"></script>
-</body>
 
 </html>
