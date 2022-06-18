@@ -3,6 +3,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #728176;
+  padding: 3rem;
+}
+
 #dolar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -14,6 +22,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 h2 {
   background-color: #728176;
   padding: 10px 0;
@@ -25,12 +34,14 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .dolar {
   text-align: center;
   border-radius: 5px;
   background-color: #728176;
   overflow: hidden;
 }
+
 .cotizacion {
   text-align: center;
   align-content: center;
@@ -41,6 +52,7 @@ h2 {
   font-size: 25px;
   background-color: #ffffff;
 }
+
 .variacion {
   text-align: center;
   width: 100%;
