@@ -116,3 +116,8 @@ h2 {
   grid-template-columns: 2/3;
   background-color: #ffffff;
 }
+
+.fecha span {
+  line-height: 30px;
+  font-size: 18px;
+}

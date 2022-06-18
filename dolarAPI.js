@@ -4,6 +4,7 @@ let DOvariacion = document.getElementById("varia");
 let fecha = document.getElementById("fecha");
 let hoy = new Date();
 const api_url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+
 function traer() {
   fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
     .then((res) => res.json())
@@ -24,7 +25,7 @@ async function Dolar_Blue() {
   document.getElementById("Venta_Blue").textContent = Data[1].casa.venta;
   document.getElementById("Variacion_Blue").textContent =
     Data[1].casa.variacion;
-  document.getElementById("Fecha_B").textContent = hoy;
+  document.getElementById("Fecha_B").textContent = hoy.toDateString();
 }
 Dolar_Blue();
 async function Dolar_Liqui() {
@@ -34,7 +35,7 @@ async function Dolar_Liqui() {
   document.getElementById("Venta_Liqui").textContent = Data[3].casa.venta;
   document.getElementById("Variacion_Liqui").textContent =
     Data[3].casa.variacion;
-  document.getElementById("Fecha_L").innerText = hoy;
+  document.getElementById("Fecha_L").innerText = hoy.toDateString();
 }
 Dolar_Liqui();
 async function Dolar_Promedio() {
@@ -44,7 +45,7 @@ async function Dolar_Promedio() {
   document.getElementById("Venta_Promedio").textContent = Data[7].casa.venta;
   document.getElementById("Variacion_Promedio").textContent =
     Data[7].casa.variacion;
-  document.getElementById("Fecha_P").innerText = hoy;
+  document.getElementById("Fecha_P").innerText = hoy.toDateString();
 }
 Dolar_Promedio();
 async function Dolar_Bolsa() {
@@ -54,7 +55,7 @@ async function Dolar_Bolsa() {
   document.getElementById("Venta_Bolsa").textContent = Data[4].casa.venta;
   document.getElementById("Variacion_Bolsa").textContent =
     Data[4].casa.variacion;
-  document.getElementById("Fecha_Bolsa").innerText = hoy;
+  document.getElementById("Fecha_Bolsa").innerText = hoy.toDateString();
 }
 Dolar_Bolsa();
 async function Mostrar_Consola() {
