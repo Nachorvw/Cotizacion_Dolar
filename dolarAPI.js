@@ -58,11 +58,21 @@ async function Dolar_Bolsa() {
   document.getElementById("Fecha_Bolsa").innerText = hoy.toDateString();
 }
 Dolar_Bolsa();
+async function Dolar_Turista() {
+  const Respuesta = await fetch(api_url);
+  const Data = await Respuesta.json();
+  document.getElementById("Compra_Turista").textContent = Data[6].casa.compra;
+  document.getElementById("Venta_Turista").textContent = Data[6].casa.venta;
+  document.getElementById("Variacion_Turista").textContent =
+    Data[6].casa.variacion;
+  document.getElementById("Fecha_Turista").innerText = hoy;
+}
+Dolar_Turista();
 async function Mostrar_Consola() {
   const Respuesta = await fetch(api_url);
   const Data = await Respuesta.json();
 
-  console.log(Data[7]);
+  console.log(Data[6]);
   console.log(Data[7].casa.compra);
   console.log(Data[7].casa.venta);
   console.log(Data[7].casa.variacion);
