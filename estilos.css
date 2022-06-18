@@ -121,3 +121,58 @@ h2 {
   line-height: 30px;
   font-size: 18px;
 }
+
+@media (max-width: 950px) {
+  #dolar {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 600px;
+  }
+
+  #dolarOficial {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #dolarBlue {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #dolarConLiquid {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #dolarPromedio {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #dolarBolsa {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #dolarTurista {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .com {
+    font-size: 15px;
+  }
+  .variacion p {
+    font-size: 15px;
+  }
+  .fecha span {
+    font-size: 15px;
+  }
+  .fecha p {
+    font-size: 15px;
+  }
+}

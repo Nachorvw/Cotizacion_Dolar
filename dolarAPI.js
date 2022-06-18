@@ -65,7 +65,7 @@ async function Dolar_Turista() {
   document.getElementById("Venta_Turista").textContent = Data[6].casa.venta;
   document.getElementById("Variacion_Turista").textContent =
     Data[6].casa.variacion;
-  document.getElementById("Fecha_Turista").innerText = hoy;
+  document.getElementById("Fecha_Turista").innerText = hoy.toDateString();
 }
 Dolar_Turista();
 async function Mostrar_Consola() {
