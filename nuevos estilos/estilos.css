@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+}
+
+.cajas{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-block{
+  float: none;
+}
